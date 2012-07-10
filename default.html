@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Horizontal Scrolling Website Without jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+    </style>
+    <link href="docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="thw.js"></script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="docs/assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="docs/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="docs/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="docs/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="docs/assets/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">Project name</a>
+            <div class="btn-group pull-right">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="icon-user"></i> Username
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Sign Out</a></li>
+                </ul>
+            </div>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div id="scrollable-content">
+    <div class="span3">
+        <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+                <li class="nav-header">Sidebar</li>
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li class="nav-header">Sidebar</li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li class="nav-header">Sidebar</li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div><!--/.well -->
+    </div><!--/span-->
+    <section>
+        <article class="box">
+            <h2><a name="box1">First Box</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget eros libero. Fusce tempus quam sit amet erat mollis a fermentum nibh imperdiet. Fusce iaculis sapien in turpis aliquet porta. Donec tincidunt gravida tortor, vel dignissim augue convallis sit amet. Aliquam auctor ornare accumsan. Cras convallis elit tincidunt arcu semper egestas. Mauris interdum fringilla nisi. Cras a dapibus lectus. Praesent blandit ullamcorper ornare. Nam hendrerit sollicitudin urna non ultricies. Phasellus condimentum auctor risus, at accumsan tellus tempor vel. Nunc mattis eleifend dolor at adipiscing.</p>
+        </article>
+
+        <article class="box">
+            <h2><a name="box2">Second Box</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget eros libero. Fusce tempus quam sit amet erat mollis a fermentum nibh imperdiet. Fusce iaculis sapien in turpis aliquet porta. Donec tincidunt gravida tortor, vel dignissim augue convallis sit amet. Aliquam auctor ornare accumsan. Cras convallis elit tincidunt arcu semper egestas. Mauris interdum fringilla nisi. Cras a dapibus lectus. Praesent blandit ullamcorper ornare. Nam hendrerit sollicitudin urna non ultricies. Phasellus condimentum auctor risus, at accumsan tellus tempor vel. Nunc mattis eleifend dolor at adipiscing.</p>
+        </article>
+
+        <article class="box">
+            <h2><a name="box3">Third Box</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget eros libero. Fusce tempus quam sit amet erat mollis a fermentum nibh imperdiet. Fusce iaculis sapien in turpis aliquet porta. Donec tincidunt gravida tortor, vel dignissim augue convallis sit amet. Aliquam auctor ornare accumsan. Cras convallis elit tincidunt arcu semper egestas. Mauris interdum fringilla nisi. Cras a dapibus lectus. Praesent blandit ullamcorper ornare. Nam hendrerit sollicitudin urna non ultricies. Phasellus condimentum auctor risus, at accumsan tellus tempor vel. Nunc mattis eleifend dolor at adipiscing. Phasellus condimentum auctor risus, at accumsan tellus tempor vel. Nunc mattis eleifend dolor at adipiscing.</p>
+        </article>
+
+        <article class="box">
+            <h2><a name="box4">Fourth Box</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget eros libero. Fusce tempus quam sit amet erat mollis a fermentum nibh imperdiet. Fusce iaculis sapien in turpis aliquet porta. Donec tincidunt gravida tortor, vel dignissim augue convallis sit amet. Aliquam auctor ornare accumsan. Cras convallis elit tincidunt arcu semper egestas. Mauris interdum fringilla nisi. Cras a dapibus lectus. Praesent blandit ullamcorper ornare. Nam hendrerit sollicitudin urna non ultricies. Phasellus condimentum auctor risus, at accumsan tellus tempor vel. Nunc mattis eleifend dolor at adipiscing.</p>
+        </article>
+
+        <article class="box">
+            <h2><a name="box5">Fifth Box</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget eros libero. Fusce tempus quam sit amet erat mollis a fermentum nibh imperdiet. Fusce iaculis sapien in turpis aliquet porta. Donec tincidunt gravida tortor, vel dignissim augue convallis sit amet. Aliquam auctor ornare accumsan. Cras convallis elit tincidunt arcu semper egestas. Mauris interdum fringilla nisi. Cras a dapibus lectus. Praesent blandit ullamcorper ornare. Nam hendrerit sollicitudin urna non ultricies. Phasellus condimentum auctor risus, at accumsan tellus tempor vel. Nunc mattis eleifend dolor at adipiscing.</p>
+        </article>
+
+        <article class="box">
+            <h2><a name="box6">Sixth Box</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget eros libero. Fusce tempus quam sit amet erat mollis a fermentum nibh imperdiet. Fusce iaculis sapien in turpis aliquet porta. Donec tincidunt gravida tortor, vel dignissim augue convallis sit amet. Aliquam auctor ornare accumsan. Cras convallis elit tincidunt arcu semper egestas. Mauris interdum fringilla nisi. Cras a dapibus lectus. Praesent blandit ullamcorper ornare. Nam hendrerit sollicitudin urna non ultricies. Phasellus condimentum auctor risus, at accumsan tellus tempor vel. Nunc mattis eleifend dolor at adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget eros libero. Fusce tempus quam sit amet erat mollis a fermentum nibh imperdiet. Fusce iaculis sapien in turpis aliquet porta. Donec tincidunt gravida tortor, vel dignissim augue convallis sit amet. Aliquam auctor ornare accumsan. Cras convallis elit tincidunt arcu semper egestas. Mauris interdum fringilla nisi. Cras a dapibus lectus. Praesent blandit ullamcorper ornare. Nam hendrerit sollicitudin urna non ultricies. Phasellus condimentum auctor risus, at accumsan tellus tempor vel. Nunc mattis eleifend dolor at adipiscing.</p>
+        </article>
+
+        <article class="box">
+            <h2><a name="box7">Seventh Box</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget eros libero. Fusce tempus quam sit amet erat mollis a fermentum nibh imperdiet. Fusce iaculis sapien in turpis aliquet porta. Donec tincidunt gravida tortor, vel dignissim augue convallis sit amet. Aliquam auctor ornare accumsan. Cras convallis elit tincidunt arcu semper egestas. Mauris interdum fringilla nisi. Cras a dapibus lectus. Praesent blandit ullamcorper ornare. Nam hendrerit sollicitudin urna non ultricies. Phasellus condimentum auctor risus, at accumsan tellus tempor vel. Nunc mattis eleifend dolor at adipiscing.</p>
+        </article>
+
+        <article class="box">
+            <h2><a name="box8">Eighth Box</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget eros libero. Fusce tempus quam sit amet erat mollis a fermentum nibh imperdiet. Fusce iaculis sapien in turpis aliquet porta. Donec tincidunt gravida tortor, vel dignissim augue convallis sit amet. Aliquam auctor ornare accumsan. Cras convallis elit tincidunt arcu semper egestas. Mauris interdum fringilla nisi. Cras a dapibus lectus. Praesent blandit ullamcorper ornare. Nam hendrerit sollicitudin urna non ultricies. Phasellus condimentum auctor risus, at accumsan tellus tempor vel. Nunc mattis eleifend dolor at adipiscing.</p>
+        </article>
+    </section>
+</div>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/bootstrap-transition.js"></script>
+<script src="js/bootstrap-alert.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+<script src="js/bootstrap-dropdown.js"></script>
+<script src="js/bootstrap-scrollspy.js"></script>
+<script src="js/bootstrap-tab.js"></script>
+<script src="js/bootstrap-tooltip.js"></script>
+<script src="js/bootstrap-popover.js"></script>
+<script src="js/bootstrap-button.js"></script>
+<script src="js/bootstrap-collapse.js"></script>
+<script src="js/bootstrap-carousel.js"></script>
+<script src="js/bootstrap-typeahead.js"></script>
+
+</body>
+</html>

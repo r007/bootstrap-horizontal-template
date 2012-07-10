@@ -1,0 +1,24 @@
+#scrollable-content {
+position: absolute;
+top: 120px; left: 40px;
+width: 6000px;
+margin: 0;
+padding: 0;
+}
+
+.box {
+background: #111111;
+width: 500px;
+float: left;
+line-height: 22px;
+margin: 30px;
+padding: 5px 30px 30px 30px;
+}
+
+.box p {
+color:#aaaaaa;
+font-size: 16px;
+line-height:24px;
+padding: 0 0 10px;
+margin: 20px 0 10px 0;
+}
