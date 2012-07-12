@@ -42,16 +42,7 @@ h1 span{
     color: rgba(255, 229, 163, 0.80);
 }
 
-.body p{
-    -moz-column-count: 2;
-    -moz-column-gap: 1em;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 1em;
-    column-count: 2;
-    column-gap: 1em;
-    text-align: justify;
-    word-spacing: -0.3ex;
-}
+
 
 .body p:first-child{
     font-size: 1.25em;
@@ -79,7 +70,45 @@ h1 span{
 
 .viewport-horizontal .scrollable-content {
     position: absolute;
-    width: 1000%;
     margin: 0;
     padding: 0;
+}
+
+@media (max-width: 480px) {
+    .viewport-horizontal .scrollable-content {
+        width: 100%;
+    }
+    .box {
+        width: 300px;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .viewport-horizontal .scrollable-content {
+        width: 100%;
+    }
+    .box {
+        width: 500px;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .viewport-horizontal .scrollable-content {
+        width: 1000%;
+    }
+    .box {
+        width: 600px;
+    }
+    .body p{
+        -moz-column-count: 2;
+        -moz-column-gap: 1em;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 1em;
+        column-count: 2;
+        column-gap: 1em;
+        text-align: justify;
+        word-spacing: -0.3ex;
+    }
 }
