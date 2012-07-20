@@ -1,11 +1,10 @@
 .box {
     background: #111111;
     width: 600px;
-    height: 100%;
-    float: left;
     line-height: 22px;
     margin-left: 15px;
     padding: 5px 30px 30px 30px;
+	display: inline-block;
 }
 
 .box p {
@@ -42,8 +41,6 @@ h1 span{
     color: rgba(255, 229, 163, 0.80);
 }
 
-
-
 .body p:first-child{
     font-size: 1.25em;
     font-family: Georgia;
@@ -53,6 +50,7 @@ h1 span{
     column-count: 1;
     letter-spacing: 0.1em;
 }
+
 .body p:first-child:first-line{
     font-weight: bold;
 }
@@ -69,18 +67,18 @@ h1 span{
 }
 
 .viewport-horizontal .scrollable-content {
-    position: absolute;
     margin: 0;
     padding: 0;
+    position: absolute;
 }
 
 @media (max-width: 480px) {
     .viewport-horizontal .scrollable-content {
-        width: 100%;
+        width: auto;
     }
     .box {
         width: 300px;
-        margin-top: 10px;
+        margin: 5px 0px 0px 0px;
     }
 }
 
@@ -95,12 +93,9 @@ h1 span{
 }
 
 @media (min-width: 1200px) {
-    .viewport-horizontal .scrollable-content {
-        width: 1000%;
-    }
-    .box {
-        width: 600px;
-    }
+	.horizontal-fix {
+		white-space: nowrap;
+	}
     .body p{
         -moz-column-count: 2;
         -moz-column-gap: 1em;
@@ -111,4 +106,10 @@ h1 span{
         text-align: justify;
         word-spacing: -0.3ex;
     }
+	.horizontal-box {
+		display: inline-block;
+		white-space: normal;
+		vertical-align: top;
+		margin-right: 20px;
+	}
 }
