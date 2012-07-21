@@ -1,0 +1,17 @@
+#scrollable-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+@media (min-width: 1200px) {
+	#scrollable-content {
+		white-space: nowrap;
+	}
+	.horizontal-box {
+		display: inline-block;
+		white-space: normal;
+		vertical-align: top;
+		margin-right: 20px;
+	}
+}
