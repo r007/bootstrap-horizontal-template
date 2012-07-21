@@ -20,7 +20,6 @@
     </style>
     <link href="docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="thw.js"></script>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -65,7 +64,7 @@
         </div>
     </div>
 </div>
-<div class="scrollable-content horizontal-fix">
+<div id="scrollable-content">
 	<div class="span3">
     	<div class="well sidebar-nav">
         	<ul class="nav nav-list">
@@ -170,6 +169,19 @@
 <script src="js/bootstrap-collapse.js"></script>
 <script src="js/bootstrap-carousel.js"></script>
 <script src="js/bootstrap-typeahead.js"></script>
+
+<script type="text/javascript">
+	$('#scrollable-content').bind('mousewheel', function(event, delta, deltaX, deltaY){
+		// console.log(delta, deltaX, deltaY);
+		if (delta > 0) {
+			// mousewheel is going up
+			window.scrollBy(-30*delta, 0);
+		} else {
+			// mousewheel is going down
+			window.scrollBy(-30*delta, 0);
+		}
+	});
+</script>
 
 </body>
 </html>

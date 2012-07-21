@@ -66,16 +66,13 @@ h1 span{
     overflow-y: hidden;
 }
 
-.viewport-horizontal .scrollable-content {
+#scrollable-content {
     margin: 0;
     padding: 0;
     position: absolute;
 }
 
 @media (max-width: 480px) {
-    .viewport-horizontal .scrollable-content {
-        width: auto;
-    }
     .box {
         width: 300px;
         margin: 5px 0px 0px 0px;
@@ -83,9 +80,6 @@ h1 span{
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-    .viewport-horizontal .scrollable-content {
-        width: 100%;
-    }
     .box {
         width: 500px;
         margin-top: 15px;
@@ -93,7 +87,7 @@ h1 span{
 }
 
 @media (min-width: 1200px) {
-	.horizontal-fix {
+	#scrollable-content {
 		white-space: nowrap;
 	}
     .body p{
